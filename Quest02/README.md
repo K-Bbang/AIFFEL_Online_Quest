@@ -12,39 +12,39 @@
       
       : 1. # 컴프리헨션
 
-fish_list = [{"이름": "Nemo", "speed": 3}, {"이름": "Dory", "speed": 5}]
+       fish_list = [{"이름": "Nemo", "speed": 3}, {"이름": "Dory", "speed": 5}]
 
-def fish_movement_com(fish_list):
-    fish_movements = [(fish["이름"], fish["speed"]) for fish in fish_list]
-    for name, speed in fish_movements:
-        print(f"{name} is swimming at {speed} m/s")
-        fish_movement_com(fish_list)
+       def fish_movement_com(fish_list):
+           fish_movements = [(fish["이름"], fish["speed"]) for fish in fish_list]
+           for name, speed in fish_movements:
+               print(f"{name} is swimming at {speed} m/s")
+               fish_movement_com(fish_list)
         
         2. #제너레이터 작업중
         
-fish_list = [{"이름": "Nemo", "speed": 3}, {"이름": "Dory", "speed": 5}]
+       fish_list = [{"이름": "Nemo", "speed": 3}, {"이름": "Dory", "speed": 5}]
 
-def fish_movement_gen(fish_list):
-  for fish in fish_list:
-    yield(fish["이름"], fish["speed"])
+       def fish_movement_gen(fish_list):
+         for fish in fish_list:
+           yield(fish["이름"], fish["speed"])
 
-move_gen = fish_movement_gen(fish_list)
+       move_gen = fish_movement_gen(fish_list)
 
-print(next(move_gen))
-print(next(move_gen))
+       print(next(move_gen))
+       print(next(move_gen))
 
      3. #제너레이터 결과
 
-def fish_movement_gen(fish_list):
-  for fish in fish_list:
-    yield(fish["이름"], 'is swimming at', fish["speed"], 'm/s')
+       def fish_movement_gen(fish_list):
+         for fish in fish_list:
+           yield(fish["이름"], 'is swimming at', fish["speed"], 'm/s')
 
-move_gen = fish_movement_gen(fish_list) # 반복 및 시간 간격 추가를 못했음. 어떻게 해야 할지?
+       move_gen = fish_movement_gen(fish_list) # 반복 및 시간 간격 추가를 못했음. 어떻게 해야 할지?
 
-print("Using Generator:")
-for i in move_gen:
-    print(i)
-print("Using Comprehension:")
+       print("Using Generator:")
+       for i in move_gen:
+           print(i)
+       print("Using Comprehension:")
 
          
 
@@ -87,36 +87,37 @@ print("Using Comprehension:")
         모델 아키텍쳐에 대한 이해를 돕고 있는지 확인
 
 - [x]  **5. 코드가 간결하고 효율적인가요?** - 네 
-      1. fish_list = [{"이름": "Nemo", "speed": 3}, {"이름": "Dory", "speed": 5}]
-
-def fish_movement_com(fish_list):
-    fish_movements = [(fish["이름"], fish["speed"]) for fish in fish_list]
-    for name, speed in fish_movements:
-        print(f"{name} is swimming at {speed} m/s")
-
-print("Using Comprehension:")
-fish_movement_com(fish_list)
-
-    2. fish_list = [{"이름": "Nemo", "speed": 3}, {"이름": "Dory", "speed": 5}]
-
-def fish_movement_gen(fish_list):
-  for fish in fish_list:
-    yield(fish["이름"], fish["speed"])
-
-move_gen = fish_movement_gen(fish_list)
-
-print(next(move_gen))
-print(next(move_gen))
-
-    3.def fish_movement_gen(fish_list):
-  for fish in fish_list:
-    yield(fish["이름"], 'is swimming at', fish["speed"], 'm/s')
-
-move_gen = fish_movement_gen(fish_list) # 반복 및 시간 간격 추가를 못했음. 어떻게 해야 할지?
-
-print("Using Generator:")
-for i in move_gen:
-    print(i)
+      1.
+              fish_list = [{"이름": "Nemo", "speed": 3}, {"이름": "Dory", "speed": 5}]
+       
+       def fish_movement_com(fish_list):
+           fish_movements = [(fish["이름"], fish["speed"]) for fish in fish_list]
+           for name, speed in fish_movements:
+               print(f"{name} is swimming at {speed} m/s")
+       
+       print("Using Comprehension:")
+       fish_movement_com(fish_list)
+       
+           2. fish_list = [{"이름": "Nemo", "speed": 3}, {"이름": "Dory", "speed": 5}]
+       
+       def fish_movement_gen(fish_list):
+         for fish in fish_list:
+           yield(fish["이름"], fish["speed"])
+       
+       move_gen = fish_movement_gen(fish_list)
+       
+       print(next(move_gen))
+       print(next(move_gen))
+       
+           3.def fish_movement_gen(fish_list):
+         for fish in fish_list:
+           yield(fish["이름"], 'is swimming at', fish["speed"], 'm/s')
+       
+       move_gen = fish_movement_gen(fish_list) # 반복 및 시간 간격 추가를 못했음. 어떻게 해야 할지?
+       
+       print("Using Generator:")
+       for i in move_gen:
+           print(i)
     
     - 파이썬 스타일 가이드 (PEP8) 를 준수하였는지 확인
     - 코드 중복을 최소화하고 범용적으로 사용할 수 있도록 모듈화(함수화) 했는지
