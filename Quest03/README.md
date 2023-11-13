@@ -1,8 +1,7 @@
-![image](https://github.com/leeseunghwan0409/Quest03/assets/149548653/85c799d2-dae9-47c3-accb-cf9b5c07f641)# AIFFEL Campus Online 7th Code Peer Review Templete
+# AIFFEL Campus Online 7th Code Peer Review Templete
 
-- 코더 : 코더 1인의 이름을 작성하세요.
+- 코더 : 이상원
 - 리뷰어 : 이승환
-
 
 
 🔑 **PRT(Peer Review Template)**
