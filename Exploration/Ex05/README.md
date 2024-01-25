@@ -50,7 +50,7 @@
     - 코드 중복을 최소화하고 범용적으로 사용할 수 있도록 함수화했는지
         - 잘 작성되었다고 생각되는 부분을 캡쳐해 근거로 첨부합니다.
         - 결측치 확인 코드가 심플하고 좋았다.<br/>
-        - ![image](https://github.com/NeatyNut/AIFFEL-K-Bbang/assets/89675001/f84457a8-aad3-4efd-91a0-8da27e377a20)
+          ![image](https://github.com/NeatyNut/AIFFEL-K-Bbang/assets/89675001/f84457a8-aad3-4efd-91a0-8da27e377a20)
 
 
 # 참고 링크 및 코드 개선
