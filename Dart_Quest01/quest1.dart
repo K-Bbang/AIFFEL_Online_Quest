@@ -49,6 +49,15 @@ String formatTime(int totalSeconds) {
   return "${minutes.toString().padLeft(2, '0')}:${seconds.toString().padLeft(2, '0')}";
 }
 
+
+<img width="433" alt="스크린샷 2024-02-01 오후 5 30 24" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/b3b9ea32-55fa-42c8-958f-909a1474d4b1">
+
+
+<img width="386" alt="스크린샷 2024-02-01 오후 5 30 47" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/5b73565b-6e87-4fae-92b1-58bc71dce799">
+
+
+<img width="531" alt="스크린샷 2024-02-01 오후 5 31 01" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/4cd8f04d-d6d3-472d-956d-17572c123cfc">
+
 /* 채림 회고 */
 //Keep : 모르는 부분을 협력해서 구글링 한 것
 //Problem : 아직 다트 언어를 배운지 얼마 되지 않아서 코드를 읽는데 걸리는 시간이 길다
