@@ -49,7 +49,6 @@ String formatTime(int totalSeconds) {
   return "${minutes.toString().padLeft(2, '0')}:${seconds.toString().padLeft(2, '0')}";
 }
 
-
 /* 채림 회고 */
 //Keep : 모르는 부분을 협력해서 구글링 한 것
 //Problem : 아직 다트 언어를 배운지 얼마 되지 않아서 코드를 읽는데 걸리는 시간이 길다
