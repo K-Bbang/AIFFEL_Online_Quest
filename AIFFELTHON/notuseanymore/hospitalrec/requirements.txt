@@ -1,0 +1,11 @@
+Flask==2.0.1
+werkzeug==2.2.2
+requests==2.31.0
+google-generativeai
+google-api-core
+google-auth
+google-auth-oauthlib
+google-cloud-storage
+google-cloud-bigquery
+google-cloud-core
+google-crc32c
